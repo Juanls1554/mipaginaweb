@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>¿Te caigo bien?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #yesButton {
+            background-color: #4CAF50;
+            color: white;
+        }
+        #noButton {
+            background-color: #FF6347;
+            color: white;
+            cursor: not-allowed;
+        }
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿Te caigo bien?</h1>
+    <button id="yesButton" onclick="showMessage()">Sí</button>
+    <button id="noButton" disabled>No</button>
+
+    <div id="message">
+        <p>¡Gracias!</p>
+        <p>Manda cap a esa persona que te cae bien.</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
